@@ -1,0 +1,66 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+body {
+    background-image: url(https://images6.alphacoders.com/715/thumb-1920-715677.png);
+    background-size: cover;
+    background-position: 0%;
+}
+
+/* Basic layout for calculator */
+.calculator {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40rem;
+    height: 40rem;
+    background-color: rgba(0, 0, 0, 0.952);
+    color: #fff;
+    font-size: 20px;
+    margin: 5% auto;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.35%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: none;
+    color: rgb(255, 254, 255);
+    height: 67%;
+    width: 100%;
+}
+
+.buttons button {
+    border: none;
+    color: white;
+    background-color: rgb(66, 19, 110);
+    font-size: 2rem;
+}
+
+
+.buttons .color {
+    color: rgb(7, 2, 12);
+}
+
+/* Style for display screen */
+.calculator #screen {
+    width: 100%;
+    height: 30%;
+    background-color: rgb(53, 23, 66);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: right;
+    padding: 10px;
+    font-size: 4rem;
+
+}
+
+@media screen and (max-width: 900px){
+    .calculator {
+        width: 100%;
+        height: 55rem;
+    }
+    body {
+        background-image: none;
+        background-color: rgb(105, 6, 92);
+    }
+}

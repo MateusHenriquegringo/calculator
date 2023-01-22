@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculadora</title>
+     <link rel="stylesheet" href="chatgpt.css">
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="calculator">
+		<div id="screen">0</div>
+		<div class="buttons">
+		<button onclick="incluirDigito('1')">1</button>
+		<button onclick="incluirDigito('2')">2</button>
+		<button onclick="incluirDigito('3')">3</button>
+		<button onclick="incluirDigito('4')">4</button>
+		<button onclick="incluirDigito('5')">5</button>
+		<button onclick="incluirDigito('6')">6</button>
+		<button onclick="incluirDigito('7')">7</button>
+		<button onclick="incluirDigito('8')">8</button>
+		<button onclick="incluirDigito('9')">9</button>
+		<button class = "zero" onclick="incluirDigito('0')">0</button>
+		<button onclick="incluirPonto()">.</button>
+		<button class="color" class= "mais" onclick="iniciarCalculo('+')">+</button>
+		<button class="color" onclick="iniciarCalculo('-')">-</button>
+		<button class="color" onclick="iniciarCalculo('*')">x</button>
+		<button class="color" onclick="iniciarCalculo('/')">/</button>
+		<button class="color" onclick="obterPorcento()">%</button>
+		<button class="color" onclick="limpar()">AC</button>
+		<button class="color" onclick="finalizarCalculo()">=</button>
+		</div>
+	  </div>
+	 <script src="calculadora.js"></script>
+</body>
+</html>
