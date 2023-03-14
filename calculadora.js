@@ -74,10 +74,10 @@ function calcular(){
     }
 
     function limpar(){
-        n1 = 0
+        n1 = ''
         operador = null
         n2 = ''
-        escreve(n1)
+        escreve(0)
     }
 
     function incluirPonto(){
